@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+        <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Configuration File of Application</comment>
+<entry key="GATE">10.25.184.65:8080</entry>
+<entry key="FILES_DIR">/files/</entry>
+<entry key="UPDATE_LINK">http://www.yourCentralRepository.org/</entry>
+<entry key="DIRECTIONS_API_LINK">https://maps.googleapis.com/maps/api/directions/json?</entry>
+<entry key="APP_KEY">yourAPIkey</entry>
+</properties>
