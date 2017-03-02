@@ -119,12 +119,12 @@ public class Node extends UnicastRemoteObject implements Reachable{
      */
     public void initFingerTable(Reachable n){
     	try {
-            this.successor = n.findSuccessor(this.getNodeKey());
-			this.fingerTable.put(this.successor,0);
-			this.predecessor = this.successor.getPredecessor();
-			this.successor.setPredecessor(this);
-            this.predecessor.setSuccessor(this);
-			for(int i=1; i<this.fingerTable.length(); i++){
+            	this.successor = n.findSuccessor(this.getNodeKey());
+		this.fingerTable.put(this.successor,0);
+		this.predecessor = this.successor.getPredecessor();
+		this.successor.setPredecessor(this);
+            	this.predecessor.setSuccessor(this);
+		for(int i=1; i<this.fingerTable.length(); i++){
                 Key nextFingerKey = this.successor(i);
                 boolean isBetweenThisAndFinger = nextFingerKey.isBetween(this.nodeKey, this.fingerTable.getFingers()[i-1].getNodeKey(), Key.ClBoundsComparison.LOWER);
 				if(isBetweenThisAndFinger){
@@ -153,12 +153,12 @@ public class Node extends UnicastRemoteObject implements Reachable{
     	for(int i=0; i<this.fingerTable.length(); i++){
     		try {
     			Key predFingerKey = this.predecessor(i);
-                Reachable p;
-                p = this.findPredecessor(predFingerKey);
-                if (!p.equals(this)){
-                    p.updateFingerTable(this,i);
-                }
-			} catch (Exception e) {
+                	Reachable p;
+			p = this.findPredecessor(predFingerKey);
+                	if (!p.equals(this)){
+                    		p.updateFingerTable(this,i);
+               		 }
+		     } catch (Exception e) {
 				e.printStackTrace();
 			}
     	}
@@ -287,13 +287,13 @@ public class Node extends UnicastRemoteObject implements Reachable{
      * @return appropriate key value.
      */
 	private Key successor(int i) {
-		BigInteger rterm = BigInteger.valueOf(2);
-		rterm = rterm.pow(i);
-		BigInteger fingerKey = this.nodeKey.toBigInt().add(rterm);
+	BigInteger rterm = BigInteger.valueOf(2);
+	rterm = rterm.pow(i);
+	BigInteger fingerKey = this.nodeKey.toBigInt().add(rterm);
         BigInteger divisor = BigInteger.valueOf(2);
         divisor = divisor.pow(Hash.getKeyLength());
         fingerKey = fingerKey.mod(divisor);
-		return new Key(fingerKey.toByteArray());
+	return new Key(fingerKey.toByteArray());
 	}
 
     /**
@@ -302,15 +302,15 @@ public class Node extends UnicastRemoteObject implements Reachable{
      * @return appropriate key value.
      */
 	private Key predecessor(int i) {
-		BigInteger rterm = BigInteger.valueOf(2);
-		rterm = rterm.pow(i);
-		BigInteger fingerKey = this.nodeKey.toBigInt().subtract(rterm);
+	BigInteger rterm = BigInteger.valueOf(2);
+	rterm = rterm.pow(i);
+	BigInteger fingerKey = this.nodeKey.toBigInt().subtract(rterm);
         if (fingerKey.compareTo(BigInteger.ZERO)== -1){
             BigInteger maxKeyVal = BigInteger.valueOf(2);
             maxKeyVal = maxKeyVal.pow(Hash.getKeyLength());
             fingerKey = maxKeyVal.add(fingerKey).add(BigInteger.ONE);
         }
-		return new Key(fingerKey.toByteArray());
+	return new Key(fingerKey.toByteArray());
 	}
 
     /**
@@ -388,7 +388,7 @@ public class Node extends UnicastRemoteObject implements Reachable{
      */
 
 
-	public InetAddress getIp(){ return this.ip; }
+    public InetAddress getIp(){ return this.ip; }
 
     public int getFileReceivingPort(){ return this.fileReceivingPort; }
 
@@ -396,15 +396,15 @@ public class Node extends UnicastRemoteObject implements Reachable{
 
     public Server getServer(){ return server; }
 
-	public Key getNodeKey(){ return this.nodeKey; }
+    public Key getNodeKey(){ return this.nodeKey; }
 
     public Reachable getSuccessor(){ return successor; }
 
-	public synchronized void setSuccessor(Reachable successor){ this.successor = successor; }
+    public synchronized void setSuccessor(Reachable successor){ this.successor = successor; }
 
-	public Reachable getPredecessor(){ return predecessor; }
+    public Reachable getPredecessor(){ return predecessor; }
 
-	public synchronized void setPredecessor(Reachable predecessor){ this.predecessor = predecessor; }
+    public synchronized void setPredecessor(Reachable predecessor){ this.predecessor = predecessor; }
 
     public synchronized void setFinger(Reachable finger,int i){
         if (finger.equals(this.successor)){
