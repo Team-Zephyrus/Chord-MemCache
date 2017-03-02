@@ -42,7 +42,7 @@ public class Node extends UnicastRemoteObject implements Reachable{
     private boolean isAlive;
 
     /** Distinct id of the node inside the ring **/
-    private	Key nodeKey;
+    private Key nodeKey;
 
     /** Predecessor node according to the key values **/
     private Reachable predecessor;
@@ -96,8 +96,8 @@ public class Node extends UnicastRemoteObject implements Reachable{
         }
         else{
         	this.initFingerTable(n);
-			this.updateOthers();
-            this.successor.transferFilesTo(this);
+		this.updateOthers();
+            	this.successor.transferFilesTo(this);
         }
         this.stabilizeTimer.scheduleAtFixedRate(this.stabilizer,10000,5000); //TODO: config stabilization start time & period
     }
