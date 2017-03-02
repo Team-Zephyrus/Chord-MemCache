@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment>Configuration File of Application</comment>
+    <entry key="GATE1">10.25.182.222:8081</entry>
+    <entry key="UPDATE_LINK">http://www.google.com/</entry>
+</properties>

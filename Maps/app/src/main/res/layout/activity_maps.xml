@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity" >
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.admir.maps.MapsActivity" >
+    <!--android:layout_below="@+id/source_text_view"-->
+
+
+
+
+    </fragment>
+    <!--
+       <AutoCompleteTextView
+               android:text="AAAAAAAAAA"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/source_text_view"
+               android:layout_weight="1"
+               android:layout_marginTop="48dp"
+               android:background="#80000000"
+               android:padding="4dp"
+               />
+
+      <AutoCompleteTextView
+          android:text="BBBBBBBB"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/destination_text_view"
+          android:layout_weight="1"
+          android:layout_marginTop="78dp"
+          android:background="#80000000"
+          android:padding="4dp"
+          />-->
+
+
+
+
+
+
+
+
+    <RadioGroup
+        android:id="@+id/radio_source_destination_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp" >
+
+        <RadioButton
+            android:id="@+id/destination"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="destination"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+
+        <View
+            android:id="@+id/destination_view"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+        <RadioButton
+            android:id="@+id/source"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="source"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+        <View
+            android:id="@+id/destination_view2"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+        <RadioButton
+            android:id="@+id/current_location_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Current"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio_driving_walking_selector"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#80000000"
+        android:padding="4dp"
+        android:layout_marginTop="48dp">
+
+        <RadioButton
+            android:id="@+id/driving"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="driving"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+
+
+        <View
+            android:id="@+id/driving_view"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+        <RadioButton
+            android:id="@+id/walking"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="walking"
+            android:layout_weight="1"
+            android:textStyle="normal|bold" />
+        <View
+            android:id="@+id/walking_view"
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#aaa" />
+
+         <Button
+           android:id="@+id/find_route_btn"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:gravity="center_horizontal|center_vertical"
+           android:text="Find Route"
+            android:layout_weight="1"
+             android:textStyle="normal|bold" />
+
+
+
+
+
+
+    </RadioGroup>
+
+
+</FrameLayout>

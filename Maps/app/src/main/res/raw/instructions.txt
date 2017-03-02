@@ -1,0 +1,256 @@
+
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "EjnOo86_z4bOv866zrvOrc6_z4XPgiA0LTYsIM6RzrjOrs69zrEgMTA1IDU5LCDOlc67zrvOrM60zrE",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "EilTYXBmb3VzIDE2MC0xNjgsIEthbGxpdGhlYSAxNzYgNzUsIEhlbGxhcw",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 37.9818552,
+               "lng" : 23.7296667
+            },
+            "southwest" : {
+               "lat" : 37.954005,
+               "lng" : 23.6964494
+            }
+         },
+         "copyrights" : "©2017 Δεδομένα χάρτη Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "5,4 χλμ",
+                  "value" : 5412
+               },
+               "duration" : {
+                  "text" : "17 λεπτά",
+                  "value" : 999
+               },
+               "end_address" : "Σαπφούς 160-168, Καλλιθέα 176 75, Ελλάδα",
+               "end_location" : {
+                  "lat" : 37.954005,
+                  "lng" : 23.6964494
+               },
+               "start_address" : "Σοφοκλέους 4-6, Αθήνα 105 59, Ελλάδα",
+               "start_location" : {
+                  "lat" : 37.9806245,
+                  "lng" : 23.7296667
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0,6 χλμ",
+                        "value" : 604
+                     },
+                     "duration" : {
+                        "text" : "3 λεπτά",
+                        "value" : 167
+                     },
+                     "end_location" : {
+                        "lat" : 37.9818552,
+                        "lng" : 23.7229938
+                     },
+                     "html_instructions" : "Κατευθυνθείτε \u003cb\u003eδυτικά\u003c/b\u003e στην \u003cb\u003eΣοφοκλέους\u003c/b\u003e προς \u003cb\u003eΑιόλου\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "{ayfFmuyoCi@rEI~@E`@]hDSfCQrBS~BY~Cm@jGAHAFEDCFON"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9806245,
+                        "lng" : 23.7296667
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "2,5 χλμ",
+                        "value" : 2532
+                     },
+                     "duration" : {
+                        "text" : "6 λεπτά",
+                        "value" : 340
+                     },
+                     "end_location" : {
+                        "lat" : 37.9689254,
+                        "lng" : 23.6994414
+                     },
+                     "html_instructions" : "Στροφή \u003cb\u003eαριστερά\u003c/b\u003e στη(ν) \u003cb\u003eΠ. Τσαλδάρη\u003c/b\u003e/\u003cb\u003eΠειραιώς\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eΣυνεχίστε για να ακολουθήσετε τον Πειραιώς\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "siyfFukxoCFLN`@JZHV\\`ARj@JZl@hBPh@^hAd@rAPj@HTRj@`@jAr@tBn@lB\\|@DNBVLZh@~APh@Rb@PXjBvCh@t@JP^p@P`@L\\Tj@j@|At@rBPd@j@~Af@tAp@bBt@dBR^LRLTJNBBz@tAfCjExAzBlB|CJLHNp@bABDFL`AbBdAfBNVDH@@Tb@FJ\\l@hB~CLTzAdCHNjArBr@lAb@t@r@lAVd@Zn@DJDJFPJ^Jd@Ln@Lh@RjAT~@Nn@JTd@rAP`@?BDJ"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9818552,
+                        "lng" : 23.7229938
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,4 χλμ",
+                        "value" : 443
+                     },
+                     "duration" : {
+                        "text" : "1 λεπτά",
+                        "value" : 61
+                     },
+                     "end_location" : {
+                        "lat" : 37.966479,
+                        "lng" : 23.7030917
+                     },
+                     "html_instructions" : "Στροφή \u003cb\u003eαριστερά\u003c/b\u003e στη(ν) \u003cb\u003eΠ. Τσαλδάρη\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "yxvfFoxsoCDFLVNWf@w@Xk@`@u@x@_BZi@`@u@\\g@N_@JUDQNWVc@Vi@DGZo@LYf@cAJQDI"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9689254,
+                        "lng" : 23.6994414
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,9 χλμ",
+                        "value" : 948
+                     },
+                     "duration" : {
+                        "text" : "4 λεπτά",
+                        "value" : 210
+                     },
+                     "end_location" : {
+                        "lat" : 37.9595728,
+                        "lng" : 23.6981438
+                     },
+                     "html_instructions" : "Στροφή \u003cb\u003eδεξιά\u003c/b\u003e στη(ν) \u003cb\u003eΑγίας Σοφίας\u003c/b\u003e/\u003cb\u003eΕπαρ.Οδ. Καλλιθέας-Ολυμπιάδας\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eΣυνεχίστε για να ακολουθήσετε τον Επαρ.Οδ. Καλλιθέας-Ολυμπιάδας\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "oivfFiotoCFFZZ^`@b@f@d@h@X\\FHh@l@X\\PPRVf@h@p@v@FDLNJHDBl@^JFbAh@nAt@NLHHLJJLn@l@jAnAZZd@f@v@x@JLj@p@LRHLHHPRRTp@x@BBDDB@B@D@D?B?FC@?HCHCJC@?JEDC@?HEHEbA_@x@[HEFCFCFAHA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.966479,
+                        "lng" : 23.7030917
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 χλμ",
+                        "value" : 233
+                     },
+                     "duration" : {
+                        "text" : "1 λεπτά",
+                        "value" : 50
+                     },
+                     "end_location" : {
+                        "lat" : 37.9579736,
+                        "lng" : 23.6997486
+                     },
+                     "html_instructions" : "Συνεχίστε προς \u003cb\u003eΣιβιτανίδου\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "i~tfFkpsoCHHz@_Ab@g@PQ~AgBbBiB"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9595728,
+                        "lng" : 23.6981438
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,3 χλμ",
+                        "value" : 346
+                     },
+                     "duration" : {
+                        "text" : "1 λεπτά",
+                        "value" : 73
+                     },
+                     "end_location" : {
+                        "lat" : 37.9559395,
+                        "lng" : 23.6967667
+                     },
+                     "html_instructions" : "Στροφή \u003cb\u003eδεξιά\u003c/b\u003e στη(ν) \u003cb\u003eΚρέμου\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ittfFmzsoClCrEr@nApArBx@nAfAjB"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9579736,
+                        "lng" : 23.6997486
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,1 χλμ",
+                        "value" : 145
+                     },
+                     "duration" : {
+                        "text" : "1 λεπτά",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 37.9549526,
+                        "lng" : 23.6978398
+                     },
+                     "html_instructions" : "Στροφή \u003cb\u003eαριστερά\u003c/b\u003e στη(ν) \u003cb\u003eΣκίππη\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "sgtfFygsoCdBkB~AiB"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9559395,
+                        "lng" : 23.6967667
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0,2 χλμ",
+                        "value" : 161
+                     },
+                     "duration" : {
+                        "text" : "1 λεπτά",
+                        "value" : 57
+                     },
+                     "end_location" : {
+                        "lat" : 37.954005,
+                        "lng" : 23.6964494
+                     },
+                     "html_instructions" : "Στρίψτε \u003cb\u003eδεξιά \u003c/b\u003e στην 2η διασταύρωση σε \u003cb\u003eΣαπφούς\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eΟ προορισμός σας θα βρίσκεται στα αριστερά σας\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "matfFonsoCjArBt@lAz@rA"
+                     },
+                     "start_location" : {
+                        "lat" : 37.9549526,
+                        "lng" : 23.6978398
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "{ayfFmuyoCs@rGc@jEsAzOo@tGGLSVVn@fA`DjBxFxFnPHf@v@zBd@lA|BpDt@fAp@rAdCzG|@dCxAxDhAdCZh@rEtH|EvH~BzD|AjCdJ|ObDvFn@xAr@~Ch@jCZdA|@dCR^v@oApCkF~@}AZu@Ti@n@mAvAuCP[b@b@bCpCrEfFXXr@b@nAp@~AbArApAdElEv@~@V`@`BlBPLVAn@QZOnCeANEHAHH~AgBpByBbBiBlCrEdCbE`CzDdEuE|DtG"
+         },
+         "summary" : "Πειραιώς",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
+
+route.txt
+Εμφάνιση route.txt.
